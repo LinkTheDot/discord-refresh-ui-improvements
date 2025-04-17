@@ -2,6 +2,12 @@
   --custom-app-top-bar-height: 24px;
 }
 
+.lineClamp1__4bd52 {
+  white-space: normal;
+  max-height: 20px;
+  word-break: break-word;
+}
+
 .visual-refresh.theme-dark {
   --background-message-hover: #2f3036 !important;
 }
