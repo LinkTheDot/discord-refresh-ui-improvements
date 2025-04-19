@@ -1,3 +1,15 @@
+/* Delete if using other themes */
+
+.visual-refresh.theme-dark {
+  --background-message-hover: #2f3036 !important;
+}
+
+.bar_c38106:not(.systemBar_c38106):not(:has(.channelTabs-trailing)) {
+  background: #202225;
+}
+
+/* ^ Delete if using other themes ^ */
+
 :root {
   --custom-app-top-bar-height: 24px;
 }
@@ -14,10 +26,6 @@
   word-break: break-word;
 }
 
-.visual-refresh.theme-dark {
-  --background-message-hover: #2f3036 !important;
-}
-
 .button__85643 {
   display: none !important;
 }
@@ -29,7 +37,6 @@
 .bar_c38106:not(.systemBar_c38106):not(:has(.channelTabs-trailing)) {
   padding: 0 12px 0 !important;
   margin-top: -33px;
-  background: #202225;
 
   .trailing_c38106 {
     top: 62px;
