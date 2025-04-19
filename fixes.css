@@ -8,6 +8,12 @@
   word-break: break-word;
 }
 
+.title_b6c092 {
+  white-space: normal;
+  max-height: 20px;
+  word-break: break-word;
+}
+
 .visual-refresh.theme-dark {
   --background-message-hover: #2f3036 !important;
 }
