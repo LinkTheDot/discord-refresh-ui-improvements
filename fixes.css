@@ -11,8 +11,11 @@
 /* ^ Delete if using other themes ^ */
 
 :root {
+  /* Sets the height for the top bar */
   --custom-app-top-bar-height: 24px;
 }
+
+/* Fixes text pushing elements around */
 
 .lineClamp1__4bd52 {
   white-space: normal;
@@ -25,6 +28,8 @@
   max-height: 20px;
   word-break: break-word;
 }
+
+/* ^ Fixes text pushing elements around ^ */
 
 .button__85643 {
   display: none !important;
@@ -57,14 +62,21 @@
 /* server list fixes */
 
 .listItem__650eb {
-  width: 80px;
+  margin: 0px !important;
+  height: 50px;
+  width: 70px;
+}
+
+.stack_dbd263 {
+  gap: 6px !important;
+  padding: 0px !important;
 }
 
 .wrapper_cc5dd2,
 .childWrapper__6e9f8,
 .icon__6e9f8 {
-  width: 50px;
-  height: 50px;
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .wrapper_cc5dd2>.svg_cc5dd2 {
@@ -75,10 +87,11 @@
 .wrapper_cc5dd2>.svg_cc5dd2 foreignObject {
   mask: none;
   overflow: visible;
-  x: -4;
+  x: 0;
   y: -4;
 }
 
+/* Makes servers round instead of square */
 .wrapper_cc5dd2 .wrapper__6e9f8 {
   width: 50px;
   height: 50px;
@@ -91,7 +104,30 @@
   background: var(--background-tertiary);
 }
 
-/* server list fixes */
+/* Fixes the folder icon showing  when a folder is closed */
+.folderGroup__48112:not(.isExpanded__48112) {
+  .folderIcon__48112 {
+    display: none !important;
+  }
+}
+
+/* Fixes DMs not having the right size */
+#guild-list-unread-dms>div {
+  height: 50px !important;
+}
+
+/* Fixes the stack not expanding properly for all servers in the folder */
+.folderGroup__48112 {
+  .stack_dbd263 {
+    display: inline !important;
+  }
+}
+
+.folderButtonContent__48112 {
+  transform: none !important;
+}
+
+/* ^ server list fixes ^ */
 /* fix text box */
 
 .formWithLoadedChatInput_f75fb0 {
@@ -283,6 +319,7 @@
 }
 
 /* user panel */
+
 .panels_c48ade {
   display: flex;
   width: flex;
@@ -292,7 +329,7 @@
   background: var(--background-secondary-alt);
 }
 
-/* Removes the button for their useless filter feature */
+/* Removes the button for their useless voice filter feature */
 .micButtonParent__37e49 .buttonChevron__37e49 {
   display: none;
 }
@@ -460,7 +497,7 @@ html .bar_c38106 {
     margin-top: -4px;
   }
 
-  .folderIconWrapper__48112,
+  .folderGroup__48112,
   .folder__48112 {
     width: 50px;
     height: 50px;
@@ -468,10 +505,10 @@ html .bar_c38106 {
     border-radius: 16px;
   }
 
-  .iconSizeMini_f34534 {
-    width: 16px;
-    height: 16px;
-  }
+  /* .iconSizeMini_f34534 { */
+  /*   width: 16px; */
+  /*   height: 16px; */
+  /* } */
 
   .expandedFolderIconWrapper__48112 {
     margin: 0;
@@ -490,12 +527,6 @@ html .bar_c38106 {
   }
 
   gap: 8px !important;
-}
-
-.wrapper__48112 {
-  .stack_dbd263 {
-    display: inline !important;
-  }
 }
 
 .listItem__650eb:has(.circleIcon__5bc7e) {
