@@ -17,15 +17,19 @@
 
 /* Fixes text pushing elements around */
 
-.lineClamp1__4bd52 {
+/* User banner game name */
+.title_b6c092,
+/* Server and channel titles */
+.lineclamp1__4bd52 {
   white-space: normal;
   max-height: 20px;
   word-break: break-word;
 }
 
-.title_b6c092 {
+/* User banner game channel path */
+.subtext__339d0 {
   white-space: normal;
-  max-height: 20px;
+  max-height: 15px;
   word-break: break-word;
 }
 
