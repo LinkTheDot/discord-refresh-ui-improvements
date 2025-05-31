@@ -26,11 +26,9 @@
   word-break: break-word;
 }
 
-/* User banner game channel path */
+/* User banner status path */
 .subtext__339d0 {
-  white-space: normal;
-  max-height: 15px;
-  word-break: break-word;
+  max-width: 150px;
 }
 
 /* ^ Fixes text pushing elements around ^ */
