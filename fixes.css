@@ -33,34 +33,6 @@
 
 /* ^ Fixes text pushing elements around ^ */
 
-.button__85643 {
-  display: none !important;
-}
-
-.tutorialContainer__1f388 {
-  padding: 10px 0 0;
-}
-
-.bar_c38106:not(.systemBar_c38106):not(:has(.channelTabs-trailing)) {
-  padding: 0 12px 0 !important;
-  margin-top: -33px;
-
-  .trailing_c38106 {
-    top: 62px;
-    right: 70px;
-    gap: 8px;
-    z-index: 102;
-
-    .recentsIcon_c99c29 {
-      display: none;
-    }
-
-    .anchor_edefb8 {
-      display: none;
-    }
-  }
-}
-
 /* server list fixes */
 
 .listItem__650eb {
@@ -384,10 +356,10 @@
 
 .winButtons_c38106 {
   position: absolute !important;
-  bottom: 25px !important;
+  bottom: 52px !important;
   gap: unset !important;
   justify-content: center !important;
-  left: -12px;
+  left: -20px !important;
   z-index: 3001;
   -webkit-app-region: no-drag;
 }
@@ -571,7 +543,33 @@ html .bar_c38106 {
 
 /* Titlebar */
 
+.button__85643 {
+  display: none !important;
+}
+
+.tutorialContainer__1f388 {
+  padding: 10px 0 0;
+}
+
+.bar_c38106:not(.systemBar_c38106):not(:has(.channelTabs-trailing)) {
+  .trailing_c38106 {
+    top: 62px;
+    right: 70px;
+    gap: 8px;
+    z-index: 102;
+
+    .recentsIcon_c99c29 {
+      display: none;
+    }
+
+    .anchor_edefb8 {
+      display: none;
+    }
+  }
+}
+
 .bar_c38106 .title_c38106 {
+  margin-top: -33px;
   /* Icon */
 
   text-align: start;
