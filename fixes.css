@@ -226,10 +226,6 @@
   background: var(--green) !important;
 }
 
-.member__5d473 {
-  max-width: 224px;
-}
-
 .barButtonAlt__0f481 {
   background: none;
 
@@ -545,10 +541,6 @@ html .bar_c38106 {
 
 .button__85643 {
   display: none !important;
-}
-
-.tutorialContainer__1f388 {
-  padding: 10px 0 0;
 }
 
 .bar_c38106:not(.systemBar_c38106):not(:has(.channelTabs-trailing)) {
