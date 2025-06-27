@@ -15,6 +15,18 @@
   --custom-app-top-bar-height: 24px;
 }
 
+/* Fix text being the wrong variable for some reason */
+
+.text_b88801 {
+  color: var(--text-default) !important;
+}
+
+.notice_6e2b9 {
+  color: var(--text-default) !important;
+}
+
+/* ^ Fix text being the wrong variable for some reason ^ */
+
 /* Fixes text pushing elements around */
 
 /* User banner game name */
