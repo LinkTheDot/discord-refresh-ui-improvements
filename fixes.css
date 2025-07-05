@@ -15,6 +15,14 @@
   --custom-app-top-bar-height: 24px;
 }
 
+/* Fix notice bar offset */
+
+.notice_c5cd6a {
+  padding-top: 20px;
+}
+
+/* ^ Fix notice bar offset ^ */
+
 /* Fix text being the wrong variable for some reason */
 
 .text_b88801 {
