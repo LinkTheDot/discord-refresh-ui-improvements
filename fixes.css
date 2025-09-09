@@ -98,7 +98,7 @@
   background: var(--background-tertiary);
 }
 
-/* Fixes the folder icon showing  when a folder is closed */
+/* Fixes the folder icon showing when a folder is closed */
 .folderGroup__48112:not(.isExpanded__48112) {
   .folderIcon__48112 {
     display: none !important;
@@ -371,14 +371,28 @@
 /* ^ user panel ^ */
 /* fix user banner under channels */
 
+
+/* Remove inbox button */
+.clickable_c99c29 {
+  display: none !important;
+}
+
+/* Window buttons position adjustment */
 .winButtons_c38106 {
-  position: absolute !important;
-  bottom: 52px !important;
-  gap: unset !important;
-  justify-content: center !important;
-  left: -20px !important;
+  position: absolute;
+  gap: unset;
+  justify-content: center;
+  bottom: 52px;
+  left: -20px;
   z-index: 3001;
-  -webkit-app-region: no-drag;
+  -webkit-app-region: no-drag !important;
+
+  .winButton_c38106 {
+    top: -4px;
+    align-items: center;
+    width: 28px;
+    height: 22px;
+  }
 }
 
 #channelTabs-settingsMenu {
@@ -400,22 +414,6 @@ html .bar_c38106 {
   right: 70px;
 }
 
-.winButtons_c38106 {
-  position: absolute;
-  gap: unset;
-  justify-content: center;
-  bottom: 35px;
-  left: -12px;
-  z-index: 3001;
-  -webkit-app-region: no-drag !important;
-
-  .winButton_c38106 {
-    top: -4px;
-    align-items: center;
-    width: 28px;
-    height: 22px;
-  }
-}
 
 .winButtonsWithDivider_c38106:before {
   border: unset;
@@ -559,10 +557,6 @@ html .bar_c38106 {
 /* ^ adjust new pin indicator ^ */
 
 /* Titlebar */
-
-.button__85643 {
-  display: none !important;
-}
 
 .bar_c38106:not(.systemBar_c38106):not(:has(.channelTabs-trailing)) {
   .trailing_c38106 {
