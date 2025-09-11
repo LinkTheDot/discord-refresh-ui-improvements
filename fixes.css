@@ -622,6 +622,11 @@ html .bar_c38106 {
   margin-bottom: 21px;
 }
 
+/* Give some breathing room for the messages */
+.channelTextArea_f75fb0 {
+  margin-top: 12px;
+}
+
 /* move typing indicator */
 .align-chat-input .inTextChannel_b88801.base_b88801 {
   bottom: 0 !important;
