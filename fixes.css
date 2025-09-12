@@ -640,8 +640,9 @@ html .bar_c38106 {
   margin-left: 5px !important;
 }
 
-/* Remove gradient when scrolling up */
-.chatTypingGradientNotAtBottom__36d07 {
+/* Remove gradients when scrolling up or typing */
+.chatTypingGradientNotAtBottom__36d07,
+.chatTypingGradientAtBottom__36d07 {
   display: none !important;
 }
 
