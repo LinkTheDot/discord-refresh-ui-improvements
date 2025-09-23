@@ -647,3 +647,19 @@ html .bar_c38106 {
 }
 
 /* ^ Fix moved user typing indicator ^ */
+
+/* Delete update button because I can't be bothered to fix it properly */
+
+.button__85643 {
+  display: none !important;
+}
+
+/* ^ Delete update button because I can't be bothered to fix it properly ^ */
+
+/* .lineClamp1__4bd52 { */
+/* max-width: 1px !important; */
+/* } */
+/**/
+/* .rtcConnectionStatusConnected__06d62 { */
+/* max-width: 1px !important; */
+/* } */
