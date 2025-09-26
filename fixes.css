@@ -205,12 +205,12 @@
   }
 
   .base_b88801 {
-    left: 16px;
+    /* left: 16px; */
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     resize: none;
-    align-items: center;
+    /* align-items: center; */
     color: var(--text-normal);
   }
 }
@@ -603,7 +603,7 @@ html .bar_c38106 {
 /* Fix moved user typing indicator */
 
 /* Remove padding on attachment button */
-.align-chat-input .attachWrapper__0923f {
+.attachWrapper__0923f {
   padding: 0 !important;
 }
 
@@ -622,13 +622,20 @@ html .bar_c38106 {
   margin-bottom: 21px;
 }
 
+/* Set typing indicator position */
+.inTextChannel_b88801.base_b88801 {
+  position: relative !important;
+  top: 0px !important;
+  left: -15px !important;
+}
+
 /* Give some breathing room for the messages */
 .channelTextArea_f75fb0 {
   margin-top: 12px;
 }
 
 /* move typing indicator */
-.align-chat-input .inTextChannel_b88801.base_b88801 {
+.align-chat-input .intextchannel_b88801 {
   bottom: 0 !important;
   top: 2px !important;
   left: -20px !important;
@@ -656,10 +663,10 @@ html .bar_c38106 {
 
 /* ^ Delete update button because I can't be bothered to fix it properly ^ */
 
-/* .lineClamp1__4bd52 { */
-/* max-width: 1px !important; */
-/* } */
-/**/
-/* .rtcConnectionStatusConnected__06d62 { */
-/* max-width: 1px !important; */
-/* } */
+.lineClamp1__4bd52 {
+  max-width: 100px !important;
+}
+
+.rtcConnectionStatusConnected__06d62 {
+  max-width: 100px !important;
+}
