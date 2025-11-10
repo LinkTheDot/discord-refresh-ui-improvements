@@ -222,119 +222,73 @@
 /* fix text box */
 /* fix user banner under channels */
 
-.footer__49fc1 {
-  border-radius: 0 0 5px 5px;
-  background-color: var(--modal-footer-background);
+/* user panel */
+.panels__5e434 {
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+  border: none;
+  border-radius: 0;
+  background: var(--background-gradient-lower, var(--background-secondary-alt));
 }
 
-.footerSeparator__49fc1 {
-  box-shadow: inset 0 1px 0 hsl(220 calc(1 * 6.522%) 18.039% /0.6);
-}
-
-.footer__5be3e {
-  /* .channelTextArea__74017 { */
-  /*   box-sizing: border-box; */
-  /*   width: 100%; */
-  /*   border-radius: 3px; */
-  /*   background-color: var(--deprecated-text-input-bg); */
-  /*   border: 1px solid var(--deprecated-text-input-border); */
-  /*   -webkit-transition: border-color 0.2s ease-in-out; */
-  /*   transition: border-color 0.2s ease-in-out; */
-  /* } */
-}
-
-.addFriend__133bf:hover {
-  background: var(--green) !important;
-}
-
-.barButtonAlt__0f481 {
-  background: none;
-
-  &:hover {
-    background: none;
-  }
-}
-
-.custom-theme-background .container_a99829 {
-  border: unset;
-}
-
-.inlineContainer__74017 {
-  box-shadow: inherit;
-  background: unset;
-  border-color: transparent;
-}
-
-.inner_a99829 {
-  border-radius: 3px;
-}
-
-.buttons__74017 {
-  margin-right: -6px !important;
-}
-
-.button__74017 {
-  padding: 4px;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.base_c48ade {
-  grid-template-areas: "titleBar titleBar titleBar" "notice notice notice" "guildsList channelsList page";
-  grid-template-rows: [top] 0px [titlebarEnd] min-content [page] 22px [end];
-}
-
-.base_c48ade .sidebar_c48ade {
+.base__5e434 .sidebar__5e434 {
   display: grid;
   grid-template-areas: "guilds sidebar" "guilds panels";
   grid-template-columns: [start] min-content [sidebarStart] unset [end];
   grid-template-rows: [start] 1fr [panelsStart] min-content [end];
-  width: 310px !important;
   border-radius: 0;
 }
 
-.base_c48ade .sidebar_c48ade>.guilds_c48ade {
+&:not(.theme-midnight) :is(.content_f75fb0, .subtitleContainer_f75fb0, .sidebarList__5e434, .container_c8ffbb) {
+  border: none !important;
+}
+
+.base__5e434 .sidebar__5e434>.guilds__5e434 {
   grid-area: guilds;
   margin-bottom: 0;
 }
 
-.base_c48ade .sidebar_c48ade>.sidebarList_c48ade {
+.base__5e434 .sidebar__5e434>.sidebarList__5e434 {
   grid-area: sidebar;
   width: 240px;
   --custom-app-panels-height: 0;
 }
 
-.base_c48ade .sidebar_c48ade>.sidebarResizeHandle_c48ade,
-:root .base_c48ade .sidebar_c48ade:after {
+.base__5e434 .sidebar__5e434>.sidebarResizeHandle__5e434,
+:root .base__5e434 .sidebar__5e434:after {
   display: none;
+}
+
+/*Betterfolders (vencord)*/
+.base__5e434.vc-betterFolders-sidebar-grid {
+  grid-template-columns: [start] 100px [guilds-end] min-content [betterFoldersSidebar-end] auto [channelsEnd] 1fr [end];
+  grid-template-areas: "titleBar titleBar titleBar titleBar" "guildsList betterFoldersSidebar notice notice" "guildsList betterFoldersSidebar channelsList page";
+}
+
+.base__5e434.vc-betterFolders-sidebar-grid .sidebar__5e434 {
+  grid-template-columns: [start] 70px [guilds-end] min-content [betterFoldersSidebar-end] 240px [end];
+  grid-template-areas: "guilds betterFoldersSidebar sidebar" "guilds betterFoldersSidebar panels";
+  width: auto !important;
+}
+
+/* ServerFolders (betterdiscord) */
+.folderContentIsOpen_ac0584 .base__5e434 {
+  grid-template-areas:
+    "titleBar titleBar titleBar titleBar"
+    "notice notice notice notice"
+    "guildsList guildsList channelsList page";
+  grid-template-columns: [start] min-content [guildsEnd] min-content [guildsEnd] min-content [channelsEnd] 1fr [end];
+}
+
+.folderContentIsOpen_ac0584 .base__5e434 .sidebar__5e434 {
+  grid-template-areas:
+    "guilds guildsFolderList sidebar"
+    "guilds guildsFolderList panels";
 }
 
 /* user panel */
-
-.panels_c48ade {
-  display: flex;
-  width: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 0;
-  background: var(--background-secondary-alt);
-}
-
-/* Removes the button for their useless voice filter feature */
-.micButtonParent__37e49 .buttonChevron__37e49 {
-  display: none;
-}
-
-/* Adjust button sizes so they don't take up so much space */
-.buttons__37e49>* {
-  width: 24px !important;
-}
-
-.visual-refresh .panels_c48ade {
-  width: auto;
-}
-
-.base_c48ade .sidebar_c48ade>.panels_c48ade {
+.base__5e434 .sidebar__5e434>.panels__5e434 {
   grid-area: panels;
   position: static;
   inset: auto;
@@ -348,13 +302,32 @@
       height: 40px;
     }
   }
+}
 
-  .panel__5dec7 {
-    background-color: var(--background-secondary-alt);
-    border-top-left-radius: unset;
-    border-top-right-radius: unset;
-    border-bottom: unset;
+.base__5e434 .sidebar__5e434>.panels__5e434 {
+  grid-area: panels;
+  position: static;
+  inset: auto;
+
+  .avatar__37e49.wrapper__44b0c {
+    width: 32px !important;
+    height: 32px !important;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
   }
+}
+
+/* Removes the button for their useless voice filter feature */
+.micButtonParent__37e49 .buttonChevron__37e49 {
+  display: none;
+}
+
+/* Adjust button sizes so they don't take up so much space */
+.buttons__37e49>* {
+  width: 24px !important;
 }
 
 .toolbar__9293f>.iconWrapper__9293f {
