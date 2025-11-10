@@ -643,3 +643,16 @@ html .bar_c38106 {
 .rtcConnectionStatusConnected__06d62 {
   max-width: 100px !important;
 }
+
+/* Disable new custom name font feature */
+.username_c19a55,
+.name__703b9,
+.innerContainer_dfb989,
+.title__9293f>div {
+  font-family: "gg sans", "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --custom-toon-stroke-width: 0 !important;
+  -webkit-text-stroke-width: 0 !important;
+  --custom-display-name-styles-main-color: initial !important;
+}
+
+/* ^ Disable new custom name font feature ^ */
