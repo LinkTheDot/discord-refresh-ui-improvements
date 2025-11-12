@@ -656,3 +656,9 @@ html .bar_c38106 {
 }
 
 /* ^ Disable new custom name font feature ^ */
+
+/* Fix apps button size */
+.buttonContainer_e6e74f {
+  height: 34px;
+  width: 34px;
+}
