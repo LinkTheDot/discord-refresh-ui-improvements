@@ -236,7 +236,12 @@
   display: grid;
   grid-template-areas: "guilds sidebar" "guilds panels";
   grid-template-columns: [start] min-content [sidebarStart] unset [end];
-  grid-template-rows: [start] 1fr [panelsStart] min-content [end];
+  /* minmax(0, 1fr), not a bare 1fr: a 1fr track keeps an automatic content-based
+     minimum, so the tall guild/channel scrollers force the row to their full
+     content height under reflow, which collapses their scroll position to the
+     top. minmax(0, ...) clamps the track minimum to 0 so it can't grow past the
+     viewport. */
+  grid-template-rows: [start] minmax(0, 1fr) [panelsStart] min-content [end];
   border-radius: 0;
 }
 
